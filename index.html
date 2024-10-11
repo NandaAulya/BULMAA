@@ -3,22 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile</title>
-</head>
-<body>
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Navbar</title>
     <link rel="stylesheet" href="node_modules/bulma/css/bulma.css">
+    <style>
+      .home {
+          min-height: 100vh;
+      }
+      .image-container img {
+          width: 300px;
+          height: 300px; 
+          object-fit: cover;
+          border-radius: 300px;
+          border: 2px solid rgb(128, 2, 128);
+          box-shadow: 0 0 20px rgba(140, 2, 140, 0.5);
+      }
+      .typing {
+          font-family: 'Courier New', Courier, monospace;
+      }
+
+      .hi {
+          font-family: 'poppins', sans-serif;
+          color: rgb(128, 3, 128);
+      }
+
+      .name {
+          font-family: 'poppins', sans-serif;
+      }
+  </style>
 </head>
 <body>
-  <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+  <nav class="navbar">
     <div class="navbar-menu has-text-centered">
       <div class="navbar-start is-size-5 has-text-weight-semibold is-centered">
-        <a href="home.html" class="navbar-item">
+        <a href="index.html" class="navbar-item">
           Home
         </a>
   
@@ -27,7 +44,28 @@
         </a>
     </div>
   </nav>
-</body>
-</html>
+  <section>
+  <div class="home is-flex is-justify-content-center is-align-items-center">
+    <div class="container is-flex is-align-items-center is-justify-content-center is-flex-direction-grow">
+        <div class="content">
+            <p class="hi is-size-4 mb-0 has-text-weight-semibold">Hello Everyone, I'm</p>
+            <p class="name is-size-1 has-text-weight-bold mb-0">Agustyn Nanda Aulya Pratama</p>
+            <p class="typing is-size-5 has-text-weight-semibold has-text-white-85" id="typing-effect"></p>
+        </div>
+        <div class="image-container ml-6">
+            <img src="assets/img/nana.jpeg" alt="Profile Image">
+        </div>
+    </div>
+</div>
+</section>
+<footer class="footer">
+  <div class="content has-text-centered">
+    <p>
+      <strong>Ini</strong><a href="https://jgthms.com"> Footer</a>.
+    </p>
+  </div>
+</footer>
+
+<script src="js/text.js"></script>
 </body>
 </html>
