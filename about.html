@@ -5,30 +5,129 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Me</title>
     <link rel="stylesheet" href="node_modules/bulma/css/bulma.css" />
+    <link rel="stylesheet" href="fontawesome/css/all.css" />
+    <style>
+      @keyframes fadeInTop {
+        from {
+          opacity: 0;
+          transform: translateY(-50px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes fadeInLeft {
+        from {
+          opacity: 0;
+          transform: translateX(-50px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+
+      @keyframes fadeInRight {
+        from {
+          opacity: 0;
+          transform: translateX(50px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+
+      .image-container img {
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 300px;
+        border: 2px solid rgb(128, 2, 128);
+        box-shadow: 0 0 20px rgba(140, 2, 140, 0.5);
+        animation: fadeInLeft 1s ease-in-out;
+      }
+
+      .aboutme {
+        animation: fadeInTop 1s ease-in-out;
+      }
+
+      .about {
+        animation: fadeInLeft 1s ease-in-out;
+      }
+
+      .text-content {
+        animation: fadeInRight 1s ease-in-out;
+      }
+    </style>
   </head>
   <body>
     <nav class="navbar">
       <div class="navbar-menu has-text-centered">
         <div class="navbar-start is-size-5 has-text-weight-semibold is-centered">
-          <a href="index.html" class="navbar-item">
-            Home
-          </a>
-    
-          <a href="about.html" class="navbar-item">
-            About
-          </a>
+          <a href="index.html" class="navbar-item">Home</a>
+          <a href="about.html" class="navbar-item">About</a>
+        </div>
       </div>
     </nav>
+    
     <section>
-      <div class="about is-flex is-justify-content-center is-align-items-center">
-        <div class="content mt-6 box">About Me</div>
-      </div>
+      <div class="container mt-6">
+        <div class="content box is-flex is-align-items-start is-flex-direction-column">
+          <p class="aboutme is-size-3 mb-4 has-text-weight-semibold">About Me 🐥</p>
+          <div class="is-flex is-align-items-center">
+            <div class="image-container mr-6 mt-4 ml-6">
+              <img src="assets/img/nana.jpeg" alt="Profile Image">
+            </div>
+            <div class="text-content mt-0">
+              <p class="is-size-5 mb-0">Hello, I'm Agustyn Nanda Aulya Pratama. I'm a Web Developer.</p>
+              <p class="is-size-5">isi nanti..........</p>
+              <p class="is-size-5">isi nanti................</p>
+            </div>
+          </div>
+        </div>
+        <div class="content mt-6">
+          <p class="about is-size-4 mb-4 has-text-weight-semibold">My Skills</p>
+        </div>
+        <div class="content">
+          <div class="columns is-multiline mb-6">
+            <div class="column is-4">
+              <div class="button is-size-5 mb-0 has-text-weight-semibold mr-6">
+                <a href="#">Technical Skills</a>
+              </div>
+              <div class="button is-size-5 mb-0 has-text-weight-semibold">
+                <a href="#">Tools</a>
+              </div>
+            </div>
+          </div>
+        </div>
     </section>
-    <footer class="footer mt-6">
+    
+    <footer class="footer">
       <div class="content has-text-centered">
         <p>
-          <strong>Ini</strong><a href=""> Footer</a>.
+          <strong>Feel free to connect with me on social media.</strong>.
         </p>
+        <a href="https://github.com/NandaAulya">
+          <i style="color: rgb(128, 2, 128);" class="fa-brands fa-github fa-2x ml-3"></i>
+        </a>
+        <a href="https://discord.com/channels/734333579982667866">
+          <i style="color: rgb(128, 2, 128);" class="fa-brands fa-discord fa-2x ml-3"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/agustyn-nanda-bb3293300/">
+          <i style="color: rgb(128, 2, 128);" class="fa-brands fa-linkedin fa-2x ml-3"></i>
+        </a>
+        <a href="https://www.instagram.com/a.nandaulya/">
+          <i style="color: rgb(128, 2, 128);" class="fa-brands fa-instagram fa-2x ml-3"></i>
+        </a>
+        <a href="https://x.com/AulyaNanda93090">
+          <i style="color: rgb(128, 2, 128);" class="fa-brands fa-x fa-2x ml-3"></i>
+        </a>
+        <a href="https://www.tiktok.com/@nd.aulya">
+          <i style="color: rgb(128, 2, 128);" class="fa-brands fa-tiktok fa-2x ml-3"></i>
+        </a>
       </div>
     </footer>
   </body>
