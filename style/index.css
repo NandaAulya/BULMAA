@@ -1,0 +1,23 @@
+.home {
+  min-height: 100vh;
+}
+.image-container img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 300px;
+  border: 2px solid rgb(128, 2, 128);
+  box-shadow: 0 0 20px rgba(140, 2, 140, 0.5);
+}
+.typing {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.hi {
+  font-family: "poppins", sans-serif;
+  color: rgb(128, 3, 128);
+}
+
+.name {
+  font-family: "poppins", sans-serif;
+}
